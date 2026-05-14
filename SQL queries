@@ -5,9 +5,8 @@ from healthcare_dataset;
 
 -- Demographics & Patients:
 -- What is the average age of patients admitted?
-select age,avg(age) as avg_age
-from healthcare_dataset
-group by age limit 10;
+select avg(age) as avg_age
+from healthcare_dataset;
 
 -- What is the gender distribution of the patients?
 select Gender, count(*) as patient_count
